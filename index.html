@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Alwin Newman | Shutterhausvisuals</title>
+    
+    <!-- PWA Elements -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#242220" />
+    
+    <!-- Apple Web App Meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Shutterhaus" />
+    <link rel="apple-touch-icon" href="https://drive.google.com/thumbnail?id=1dGo1hDouUsBn3CLQsB5cz-Ji40wzxgAI&sz=w192" />
+    <script type="module" crossorigin src="./assets/index-BglmtbF8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BisymTgs.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Register Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('Service Worker registered successfully:', reg.scope))
+            .catch(err => console.log('Service Worker registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
