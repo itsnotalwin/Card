@@ -30,7 +30,7 @@ const contactData = {
   email: 'itsnotalwin@gmail.com',
   phone: '+27730958363',
   website: 'https://shutterhausvisuals.mypixieset.com/',
-  about: 'Capturing the essence of individuals through striking, authentic portraiture. Bringing your unique story to light.',
+  about: 'Striking, authentic portraits that bring your story to light.',
   image: 'https://drive.google.com/thumbnail?id=1dGo1hDouUsBn3CLQsB5cz-Ji40wzxgAI&sz=w500',
   coverImage: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800&h=400&auto=format&fit=crop',
   links: [
@@ -162,9 +162,9 @@ END:VCARD`;
           </div>
 
           {/* About */}
-          <div className="mb-4 text-center">
-            <p className="text-stone-500 text-xs leading-relaxed italic font-serif px-2">
-              "{contactData.about}"
+          <div className="mb-5 text-center">
+            <p className="text-stone-700 font-sans text-xs sm:text-[13px] leading-relaxed tracking-wide font-medium px-4">
+              “{contactData.about}”
             </p>
           </div>
 
