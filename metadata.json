@@ -1,0 +1,6 @@
+{
+  "name": "Digital Business Card",
+  "description": "A clean, modern digital business card designed for static hosting on platforms like GitHub Pages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
