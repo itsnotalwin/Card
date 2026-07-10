@@ -14,8 +14,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Shutterhaus" />
     <link rel="apple-touch-icon" href="https://drive.google.com/thumbnail?id=1dGo1hDouUsBn3CLQsB5cz-Ji40wzxgAI&sz=w192" />
-    <script type="module" crossorigin src="/Card/assets/index-BglmtbF8.js"></script>
-    <link rel="stylesheet" crossorigin href="/Card/assets/index-BisymTgs.css">
+    <script type="module" crossorigin src="./assets/index-BglmtbF8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BisymTgs.css">
   </head>
   <body>
     <div id="root"></div>
@@ -24,8 +24,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          const basePath = window.location.pathname.includes('/Card/') ? '/Card/' : './';
-          navigator.serviceWorker.register(basePath + 'sw.js')
+          navigator.serviceWorker.register('./sw.js')
             .then(reg => console.log('Service Worker registered successfully with scope:', reg.scope))
             .catch(err => console.log('Service Worker registration failed:', err));
         });
